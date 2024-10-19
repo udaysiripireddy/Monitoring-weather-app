@@ -1,0 +1,90 @@
+.weather {
+  width: 350px;
+  border-radius: 12px;
+  background-color: #ffffff; /* Light background for better readability */
+  color: #1e293b; /* Dark slate gray text */
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Simplified transition */
+}
+
+.weather:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+  transform: scale(1.02); /* Slight scale effect on hover */
+}
+
+.top,
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* City name styling */
+.city {
+  font-weight: 700; /* Bold */
+  font-size: 20px; /* Slightly larger */
+  letter-spacing: 1px;
+  margin: 0;
+  text-transform: uppercase;
+  color: #1e3a8a; /* Navy blue */
+}
+
+/* Weather description styling */
+.weather-description {
+  font-weight: 400;
+  font-size: 16px; /* Slightly larger for better visibility */
+  margin: 0;
+  color: #475569; /* Medium gray for descriptions */
+}
+
+/* Weather icon styling */
+.weather-icon {
+  width: 80px; /* Adjusted size */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Temperature styling */
+.temperature {
+  font-weight: 700; /* Bold */
+  font-size: 64px; /* Adjusted for visibility */
+  letter-spacing: -2px;
+  margin: 10px 0;
+  color: #1e3a8a; /* Navy blue for temperature */
+}
+
+/* Details container styling */
+.details {
+  width: 100%;
+  padding-left: 10px; /* Reduced padding */
+}
+
+/* Parameter row styling */
+.parameter-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0; /* Added padding for separation */
+}
+
+/* Parameter label styling */
+.parameter-label {
+  text-align: left;
+  font-weight: 500; /* Medium weight for labels */
+  font-size: 14px; /* Slightly larger */
+  color: #6b7280; /* Cool gray */
+}
+
+/* Parameter value styling */
+.parameter-value {
+  text-align: right;
+  font-weight: 600; /* Bold for values */
+  font-size: 14px; /* Slightly larger */
+  color: #1e293b; /* Dark slate gray */
+}
+
+/* Top parameter label for visual separation */
+.parameter-label.top {
+  border-bottom: 2px solid #e2e8f0; /* Light border for top labels */
+  margin-bottom: 10px; /* Spacing below the label */
+}

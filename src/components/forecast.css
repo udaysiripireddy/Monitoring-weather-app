@@ -1,0 +1,102 @@
+/* Title Styling */
+.title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1e3a8a; /* Navy blue */
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Daily item container */
+.daily-item {
+  background-color: #ffffff;
+  border-radius: 10px;
+  height: 60px;
+  margin: 10px 0;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.daily-item:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+/* Icon styling */
+.icon-small {
+  width: 50px;
+  height: auto;
+  margin-right: 15px;
+}
+
+/* Day name styling */
+.daily-item .day {
+  font-weight: 600;
+  font-size: 16px;
+  color: #0f172a; /* Darker navy */
+  flex: 2;
+  margin-left: 15px;
+}
+
+/* Description styling */
+.description {
+  flex: 1.5;
+  text-align: right;
+  font-size: 14px;
+  font-weight: 400;
+  color: #64748b; /* Muted gray */
+}
+
+/* Min-max temperature styling */
+.min-max {
+  font-size: 14px;
+  font-weight: 500;
+  color: #334155; /* Darker gray */
+}
+
+/* Daily details grid */
+.daily-details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 20px;
+  padding: 15px;
+  background-color: #f8fafc; /* Light background */
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+/* Individual grid items */
+.daily-details-grid-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease;
+}
+
+.daily-details-grid-item:hover {
+  background-color: #e2e8f0; /* Light blue-gray hover effect */
+}
+
+/* Label for item descriptions */
+.daily-details-grid-item label:first-child {
+  font-size: 14px;
+  color: #6b7280; /* Cool gray */
+  font-weight: 500;
+}
+
+/* Label for item values */
+.daily-details-grid-item label:last-child {
+  font-size: 16px;
+  color: #1e293b; /* Dark slate gray */
+  font-weight: 600;
+}
